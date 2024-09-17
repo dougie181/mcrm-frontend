@@ -1,0 +1,56 @@
+[
+  {
+    "label": "Clients",
+    "path": "/clients"
+  },
+  {
+    "label": "Campaigns",
+    "path": "/campaigns"
+  },
+  {
+    "label": "Email Templates",
+    "path": "/email_templates"
+  },
+  {
+    "label": "Reports",
+    "path": "/reports"
+  },
+  {
+    "label": "Tasks",
+    "path": "/tasks"
+  },
+  {
+    "label": "Query Builder",
+    "path": "/query-builder"
+  },
+  {
+    "label": "Asset Maintenance",
+    "submenu": [
+      {
+        "label": "Asset Mapping",
+        "path": "/asset-maintenance/mapping"
+      },
+      {
+        "label": "Asset Allocation",
+        "path": "/asset-maintenance/allocation"
+      }
+    ]
+  },
+  {
+    "label": "Import Data",
+    "path": "/import-data"
+  },
+  {
+    "label": "Settings",
+    "submenu" : [
+      {
+        "path": "/settings",
+        "label": "Application Settings"
+      },
+      {
+        "path": "/settings/lookup-values",
+        "label": "Lookup Values"
+      }
+    ]
+  }
+]

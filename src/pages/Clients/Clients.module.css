@@ -1,0 +1,27 @@
+.sidePanel {
+  position: absolute;
+  top: 67px;
+  right: 0;
+  z-index: 1000;
+	border: solid 1px;
+  border-color: #e0e0e0;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+.dataGridCell {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.my-data-grid {
+  height: calc(100vh - 230px); /* adjust the value based on the height of other elements */
+}
+
+.inactiveClientRow {
+  background-color: #f2dede; /* Light red background for inactive clients */
+}

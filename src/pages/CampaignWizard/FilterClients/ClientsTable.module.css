@@ -1,0 +1,31 @@
+/* ClientsTable.module.css */
+
+/* Wobble animation */
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Class to apply wobble animation */
+.wobble {
+  animation: wobble 0.5s infinite;
+}
+
+/* Class to apply pulse animation (if needed) */
+.pulse {
+  animation: pulse 1s infinite;
+}

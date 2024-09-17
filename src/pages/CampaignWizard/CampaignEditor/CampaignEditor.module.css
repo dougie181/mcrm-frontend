@@ -1,0 +1,16 @@
+/* Add a vertical bar and padding to the resizable area */
+.resizableTemplateEditor:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.5px; /* Width of the vertical bar */
+  background-color: #ccc; /* Color of the vertical bar */
+  cursor: col-resize;
+}
+
+.resizableTemplateEditor .MuiPaper-root {
+  border-right: 2px solid #ccc; /* Change the color as needed */
+}
