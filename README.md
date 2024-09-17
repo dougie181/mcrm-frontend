@@ -4,121 +4,107 @@ ReactJS frontend application
 Table of Contents
 - [mcrm-frontend](#mcrm-frontend)
 - [Introduction](#introduction)
-  - [Key functionality](#key-functionality)
-- [Application architecture](#application-architecture)
+  - [Key Functionality](#key-functionality)
+- [Application Architecture](#application-architecture)
   - [Overview](#overview)
+  - [Back to top](#back-to-top)
 - [Installation](#installation)
     - [Prerequisites](#prerequisites)
-    - [1. Install development tools](#1-install-development-tools)
-      - [Installing node](#installing-node)
+    - [1. Install Development Tools](#1-install-development-tools)
+      - [Installing Node](#installing-node)
       - [Installing VS Code](#installing-vs-code)
     - [2. Downloading source code](#2-downloading-source-code)
       - [Create folder to store repository](#create-folder-to-store-repository)
-      - [Download from github](#download-from-github)
+      - [Cloning the Repository](#cloning-the-repository)
     - [4. Setting up Frontend](#4-setting-up-frontend)
       - [Building CKEditor](#building-ckeditor)
       - [Setup the frontend ReactJS app:](#setup-the-frontend-reactjs-app)
       - [Starting the development web server](#starting-the-development-web-server)
   - [Application folder structure](#application-folder-structure)
+  - [Back to top](#back-to-top-1)
 - [Included Library Packages](#included-library-packages)
+- [Contributing](#contributing)
 - [License](#license)
 
 ___
 # Introduction
-the mcrm-frontend application is a reactJS frontend component of the larger martinCRM solution. The entire solution is a comprehensive client communication management tool specifically designed to streamline the process of managing client interactions based on email campaigns. This web-based application offers a seamless integration of client data management, email campaign facilitation, and response tracking.
 
-## Key functionality
+The `mcrm-frontend` is a ReactJS frontend component of the martinCRM solution, a comprehensive client communication management tool. It streamlines the process of managing client interactions based on email campaigns. This web-based application integrates client data management, email campaign facilitation, and response tracking.
 
-The following is a description of this projects key functionality
+## Key Functionality
 
-1. Ability to import client and account information from external trade / investment platforms
-2. Develop rich email templates with placeholders for mail merge.
-3. Create and manage email campaigns that link queries, client criteria and email templates for sending Record of Advice emails to clients.
-4. Keep a history of email correspondence and other notes or information against a client
-5. Track email responses as tasks that can ensure responses to clients are not forgotten.
+The key features of the `mcrm-frontend` application include:
+
+1. Importing client and account information from external trade/investment platforms.
+2. Developing rich email templates with placeholders for mail merge.
+3. Creating and managing email campaigns that link queries, client criteria, and templates for sending Record of Advice emails to clients.
+4. Maintaining a history of email correspondence and notes for each client.
+5. Tracking email responses as tasks to ensure timely responses to clients.
 
 ---
-# Application architecture
+# Application Architecture
 
 ## Overview
-The overall application is made up of two main parts
-1. Backend application, that includes a backend Flask API and SQLite database 
-2. The frontend ReactJS application (this project).
 
+The martinCRM application consists of two main parts:
+
+1. **Backend**: A Flask API with a SQLite database.
+2. **Frontend**: A ReactJS application (this project).
+
+[Back to top](#mcrm-frontend)
 ---
 # Installation
 
 ### Prerequisites
 
-Before you begin the building the frontend you will need to have the following:
+Ensure you have the following installed before proceeding:
 
-- Node.js 14 or higher (currently 20.5.0) - recommended to use nvm to manage 
-- Git installed on your system
-- VS Code
+- [Node.js](https://nodejs.org/) version 14 or higher (recommended: use [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions).
+- [Git](https://git-scm.com/) installed on your system.
+- [Visual Studio Code](https://code.visualstudio.com/).
 
-### 1. Install development tools
+### 1. Install Development Tools
 
-#### Installing node
+#### Installing Node
 
-We may need various node versions over time, so it may be a good idea to install Node Version Manager (nvm) before we actually install node (see above).
+To manage Node.js versions, it’s recommended to install Node Version Manager (nvm). After installing `nvm`, you can check your installed node versions with:
 
-To check out what node versions are already installed:
 ```bash
 nvm ls
-```
-
-To install the latest version available:
-```bash
 nvm install node
 ```
 
 #### Installing VS Code
-1. Download Visual Studio code from website: [https://code.visualstudio.com/](https://code.visualstudio.com/)
-2. (Optional) Install Command Line Tools
+1.	Download Visual Studio Code from the official website.
+2.	(Optional) Install Command Line Tools:
+	•	Open VS Code, press Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows) to open the Command Palette.
+	•	Search for “shell command” and select Install 'code' command in PATH.
 
-   - For ease of access, you might want to install the command-line tools. This allows you to open VSCode from the terminal by typing ```code .``` from a terminal command shell.
-
-   - After opening VSCode, press Cmd + Shift + P to open the Command Palette.
-Type **shell command** in the search box, and select Install 'code' command in PATH from the list.
-
-At this point, you should have everything you need to build the development environment.
+This allows you to open VS Code directly from the terminal using ```code .```
 
 ### 2. Downloading source code
 
 #### Create folder to store repository
-From within a Terminal sessopm
+From within a Terminal session
 
 ```bash
 cd
 mkdir -p ~/git
 ```
 
-#### Download from github
-To acces the repository, the owner will need to grant a "Personal access token". To create a personal access token, the owner of the repo needs to:
-1. login to [github.com](https://github.com)
-2. from the right hand menu, choose **Settings**. 
-3. At the bottom of the settings left hand menu options, select **Developer Settings**
-4. Select **Personal access tokens**
-5. Click **Generate new token**
-6. Enter a note describing the purpose of the token
-7. Select the scope of the token (e.g., full control)
-8. Click **Generate token**
-9. Make sure to copy your personal access token now. You won’t be able to see it again!
+#### Cloning the Repository
+You’ll need a “Personal Access Token” from GitHub to access the repository. The repository owner will grant this access. Once you have the token, clone the repository:
 
-Using git clone:
 ```bash
 cd ~/git
 git clone https://github.com/dougie181/mcrm-frontend.git
-
-username: <Enter your github username>
-password: <Enter youe personal access token as the password>
 cd mcrm-frontend
 ```
 
 ### 4. Setting up Frontend
 
 #### Building CKEditor
-We've used a custom version of CKEditor, so this requires installation and building before the rest of the ReactJS application.
+We use a custom build of CKEditor to meet the specific needs of this project. You need to install and build it before setting up the rest of the ReactJS app.
 
 ```bash
 cd ckeditor-custom-build
@@ -142,7 +128,7 @@ npm run dev
 ```
 We are done!
 
-Note: The backend application is required for the frontend to function properly.
+> **Note**: The backend application is required for the frontend to function properly.
 
 
 ## Application folder structure
@@ -164,6 +150,7 @@ Here is the application solution folder structure:
 │
 └── README.md                         # this file
 ```
+[Back to top](#mcrm-frontend)
 ---
 # Included Library Packages
 
@@ -200,6 +187,18 @@ The following libraries and packages are used in this project:
 - `xlsx`: SheetJS library for parsing and writing spreadsheet files.
 
 ---
+# Contributing
+
+We welcome contributions to improve this project. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Submit a pull request for review.
+
+---
 # License
 
 This project is licensed under the GPLv2 License - see the [LICENSE](LICENSE) file for details.
+
+[Back to top](#mcrm-frontend)
