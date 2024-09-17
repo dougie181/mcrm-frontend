@@ -7,29 +7,28 @@ Table of Contents
   - [Key Functionality](#key-functionality)
 - [Application Architecture](#application-architecture)
   - [Overview](#overview)
-  - [Back to top](#back-to-top)
 - [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [1. Install Development Tools](#1-install-development-tools)
       - [Installing Node](#installing-node)
-      - [Installing VS Code](#installing-vs-code)
-    - [2. Downloading source code](#2-downloading-source-code)
-      - [Create folder to store repository](#create-folder-to-store-repository)
       - [Cloning the Repository](#cloning-the-repository)
     - [4. Setting up Frontend](#4-setting-up-frontend)
       - [Building CKEditor](#building-ckeditor)
       - [Setup the frontend ReactJS app:](#setup-the-frontend-reactjs-app)
       - [Starting the development web server](#starting-the-development-web-server)
   - [Application folder structure](#application-folder-structure)
-  - [Back to top](#back-to-top-1)
+  - [Back to top](#back-to-top)
 - [Included Library Packages](#included-library-packages)
 - [Contributing](#contributing)
 - [License](#license)
 
 ___
+
 # Introduction
 
 The `mcrm-frontend` is a ReactJS frontend component of the martinCRM solution, a comprehensive client communication management tool. It streamlines the process of managing client interactions based on email campaigns. This web-based application integrates client data management, email campaign facilitation, and response tracking.
+
+[Back to top](#mcrm-frontend)
 
 ## Key Functionality
 
@@ -41,7 +40,10 @@ The key features of the `mcrm-frontend` application include:
 4. Maintaining a history of email correspondence and notes for each client.
 5. Tracking email responses as tasks to ensure timely responses to clients.
 
+[Back to top](#mcrm-frontend)
+
 ---
+
 # Application Architecture
 
 ## Overview
@@ -52,7 +54,9 @@ The martinCRM application consists of two main parts:
 2. **Frontend**: A ReactJS application (this project).
 
 [Back to top](#mcrm-frontend)
+
 ---
+
 # Installation
 
 ### Prerequisites
@@ -62,6 +66,8 @@ Ensure you have the following installed before proceeding:
 - [Node.js](https://nodejs.org/) version 14 or higher (recommended: use [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions).
 - [Git](https://git-scm.com/) installed on your system.
 - [Visual Studio Code](https://code.visualstudio.com/).
+
+[Back to top](#mcrm-frontend)
 
 ### 1. Install Development Tools
 
@@ -73,18 +79,18 @@ To manage Node.js versions, it’s recommended to install Node Version Manager (
 nvm ls
 nvm install node
 ```
+nstalling VS Code
 
-#### Installing VS Code
-1.	Download Visual Studio Code from the official website.
-2.	(Optional) Install Command Line Tools:
+	1.	Download Visual Studio Code from the official website.
+	2.	(Optional) Install Command Line Tools:
 	•	Open VS Code, press Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows) to open the Command Palette.
-	•	Search for “shell command” and select Install 'code' command in PATH.
+	•	Search for “shell command” and select Install ‘code’ command in PATH.
 
-This allows you to open VS Code directly from the terminal using ```code .```
+This allows you to open VS Code directly from the terminal using code ..
 
-### 2. Downloading source code
+2. Downloading source code
 
-#### Create folder to store repository
+Create folder to store repository
 From within a Terminal session
 
 ```bash
@@ -126,14 +132,13 @@ echo "VITE_API_BASE_URL=http://localhost:5001/api" > .env
 ```bash
 npm run dev
 ```
-We are done!
 
 > **Note**: The backend application is required for the frontend to function properly.
 
 
 ## Application folder structure
 		
-Here is the application solution folder structure:
+Here is the application folder structure:
 ```plaintext
 # ReactJS front end web application
 ├── ckeditor-custom-build/    # CKEditor custom build
