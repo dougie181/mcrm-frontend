@@ -161,7 +161,7 @@ Here is the application folder structure:
 ├── .env                      # holds the Flask API base address 
 ├── ...
 │
-└── README.md                         # this file
+└── README.md                 # this file
 ```
 [Back to top](#mcrm-frontend)
 ---
