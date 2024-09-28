@@ -9,10 +9,12 @@ Table of Contents
   - [Overview](#overview)
 - [Installation](#installation)
     - [Prerequisites](#prerequisites)
-    - [1. Install Development Tools](#1-install-development-tools)
+    - [Install Development Tools](#install-development-tools)
       - [Installing Node](#installing-node)
+      - [Installing VS Code](#installing-vs-code)
+      - [Downloading source code from gihub repository](#downloading-source-code-from-gihub-repository)
       - [Cloning the Repository](#cloning-the-repository)
-    - [4. Setting up Frontend](#4-setting-up-frontend)
+    - [Setting up Frontend](#setting-up-frontend)
       - [Building CKEditor](#building-ckeditor)
       - [Setup the frontend ReactJS app:](#setup-the-frontend-reactjs-app)
       - [Starting the development web server](#starting-the-development-web-server)
@@ -69,7 +71,7 @@ Ensure you have the following installed before proceeding:
 
 [Back to top](#mcrm-frontend)
 
-### 1. Install Development Tools
+### Install Development Tools
 
 #### Installing Node
 
@@ -79,19 +81,24 @@ To manage Node.js versions, it’s recommended to install Node Version Manager (
 nvm ls
 nvm install node
 ```
-nstalling VS Code
 
-	1.	Download Visual Studio Code from the official website.
-	2.	(Optional) Install Command Line Tools:
-	•	Open VS Code, press Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows) to open the Command Palette.
-	•	Search for “shell command” and select Install ‘code’ command in PATH.
+#### Installing VS Code
 
-This allows you to open VS Code directly from the terminal using code ..
+1. Download Visual Studio Code from the official website.
+2. (Optional) Install Command Line Tools:
+    - Open VS Code, press Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows) to open the Command Palette.
+    - Search for “shell command” and select Install ‘code’ command in PATH.
 
-2. Downloading source code
+This allows you to open VS Code directly from the terminal using:
 
-Create folder to store repository
-From within a Terminal session
+```bash
+code .
+```
+
+#### Downloading source code from gihub repository
+
+1. Create folder to store repository
+2. From within a Terminal session
 
 ```bash
 cd
@@ -99,6 +106,7 @@ mkdir -p ~/git
 ```
 
 #### Cloning the Repository
+
 You’ll need a “Personal Access Token” from GitHub to access the repository. The repository owner will grant this access. Once you have the token, clone the repository:
 
 ```bash
@@ -107,7 +115,7 @@ git clone https://github.com/dougie181/mcrm-frontend.git
 cd mcrm-frontend
 ```
 
-### 4. Setting up Frontend
+### Setting up Frontend
 
 #### Building CKEditor
 We use a custom build of CKEditor to meet the specific needs of this project. You need to install and build it before setting up the rest of the ReactJS app.
@@ -161,7 +169,7 @@ Here is the application folder structure:
 
 The following libraries and packages are used in this project:
 
-- `@ckeditor/ckeditor5-react`: CKEditor 5 rich-text editor integration for React.
+- `@ckeditor/ckeditor5-react`: CKEditor 5 rich-text editor integration for React. [License Agreement](https://ckeditor.com/legal/ckeditor-oss-license/)
 - `@emotion/react`: Library for writing CSS styles with JavaScript.
 - `@emotion/styled`: Styled components for `@mui/material`.
 - `@mui/icons-material`: Material UI icons for React.
